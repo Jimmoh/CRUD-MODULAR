@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var conn  = require('../db');
+const express = require('express');
+const router = express.Router();
+const conn  = require('../db');
 
 //route for insert data
 router.post('/save',(req, res) => {
