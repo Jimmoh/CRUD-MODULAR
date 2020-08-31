@@ -6,11 +6,8 @@ const conn=mysql.createConnection({
     password:'',
     database:'crud_db'
   });
-conn.connect(function(error){
-    if(!!error){
-        console.log(error);
-    }else{
-        console.log('MYSQL is now Connected!:)');
-    }
+conn.connect((err) => {
+    if(err) throw err;
+    console.log('MYSQL is now Connected!:)');
 })
 module.exports = conn; 
