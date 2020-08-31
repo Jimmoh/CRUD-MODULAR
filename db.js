@@ -10,7 +10,7 @@ conn.connect(function(error){
     if(!!error){
         console.log(error);
     }else{
-        console.log('MYSQL sasa iko Connected!:)');
+        console.log('MYSQL is now Connected!:)');
     }
 })
 module.exports = conn; 
